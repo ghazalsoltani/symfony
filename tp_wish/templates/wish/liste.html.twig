@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for wish in wishes %}
+        <tr>
+            <td>{{ wish.name }}</td>
+            <td><a href="{{ path('wish_detail', {'id': wish.id}) }}">detail</a></td>
+        </tr>
+    {% endfor %}
+{% endblock %}

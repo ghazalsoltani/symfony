@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h2>Wish details</h2>
+
+        <p>Wish name :{{ wish.name }}</p>
+        <p>Description :{{ wish.description }}</p>
+        <p>Author : {{ wish.author }}</p>
+        <img src="{{ asset('posters/wish/' ~ wish.poster) }}" alt="">
+        <p>Category : {{ wish.category.name }}</p>
+
+
+{% endblock %}
